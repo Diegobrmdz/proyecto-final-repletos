@@ -8,7 +8,7 @@ import personasRoutes from './routes/personas.routes.js'
 
 /* ----------------------------- initializacion ----------------------------- */
 const app = express();
-/*evitar colisiones de nombre de variable*/
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 /* --------------------------------- setting -------------------------------- */
