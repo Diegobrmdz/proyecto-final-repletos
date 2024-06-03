@@ -4,7 +4,7 @@ import morgan from 'morgan';
 import {join, dirname} from 'path'
 import {fileURLToPath} from 'url'
 import { engine } from 'express-handlebars';
-import personasRoutes from './routes/personas.routes.js'
+import productosRoutes from './routes/productos.routes.js'
 
 /* ----------------------------- initializacion ----------------------------- */
 const app = express();
@@ -12,7 +12,7 @@ const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 /* --------------------------------- setting -------------------------------- */
-app.set('port' , process.env.PORT || 3000 )
+app.set('port' , process.env.PORT || 4000 )
 app.set('views' , join(__dirname, 'views'));
 app.engine('.hbs' , engine({
     defaultLayout: 'main' ,
@@ -32,7 +32,7 @@ app.get('/' , (req, res) => {
     res.render('index')
 });
 
-app.use(personasRoutes);
+app.use(productosRoutes);
 
 
 /* ------------------------------ public files ------------------------------ */
