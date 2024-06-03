@@ -6,26 +6,26 @@
                     <h3 class="text-uppercase"> Ingresar Producto </h3>
                 </div>
                 <div class="card-body">
-                    <form action="/edit/{{persona.id}}" method="post"  enctype="multipart/form-data">
+                    <form action="/edit/{{producto.id}}" method="post"  enctype="multipart/form-data">
 
                         <div class="input-group mt-2">
-                            <label for="name" class="input-group-text"> Nombre Producto </label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Ejemplo: Cristhian David" value="{{persona.name}}" autofocus required >
+                            <label for="producto" class="input-group-text"> Nombre Producto </label>
+                            <input class="form-control" type="text" producto="producto" id="name" placeholder="Ejemplo: Carne" value="{{producto.producto}}" autofocus required >
                         </div>
 
                         <div class="input-group mt-2">
-                            <label for="lastname" class="input-group-text"> Apellido Persona </label>
-                            <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Ejemplo: Galvis Cardona" value="{{persona.lastname}}" required >
+                            <label for="ingredientes" class="input-group-text"> Ingredientes de rollo </label>
+                            <input class="form-control" type="text" name="ingredientes" id="lastname" placeholder="Ejemplo: carne, lechuga" value="{{producto.ingredientes}}" obligatorio >
                         </div>
 
                         <div class="input-group mt-2">
-                            <label for="age" class="input-group-text"> Edad </label>
-                            <input class="form-control" type="number" name="age" id="age" placeholder="0" value="{{persona.age}}" required >
+                            <label for="age" class="input-group-text"> ingredientes </label>
+                            <input class="form-control" type="number" name="ingredientes" id="age" placeholder="0" value="{{producto.age}}" obligatorio >
                         </div>
 
                         <div class="input-group mt-2">
                             <label for="observacion" class="input-group-text"> Observacion </label>
-                            <input class="form-control" type="text" name="observacion" id="observacion" value="{{persona.observacion}}" placeholder="Escriba una observacion" required >
+                            <input class="form-control" type="text" name="observacion" id="observacion" value="{{producto.observacion}}" placeholder="Escriba una observacion" obligatorio >
                         </div>
 
                         <div class="input-group mt-2">

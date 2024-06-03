@@ -3,35 +3,33 @@
         <div class="col-md-4 mx-auto">
             <div class="card text-center">
                 <div class="card-header">
-                <h3 class="text-uppercase"> Crear Nueva Persona</h3>
+                <h3 class="text-uppercase"> Crear Producto</h3>
             </div>
             <div class="card-body">
                 <form action="/add" method="post" enctype="multipart/form-data">
                 
                     <div class="input-group mt-2">
-                            <label for="name" class="input-group-text"> Nombre Persona </label>
-                            <input class="form-control" type="text" name="name" id="name" placeholder="Ejemplo: Cristhian Galvis" autofocus required >
+                            <label for="name" class="input-group-text"> id </label>
+                            <input class="form-control" type="number" name="id" id="id" placeholder="Ejemplo: 001" autofocus required >
                     </div>
 
                     <div class="input-group mt-2">
-                            <label for="lastname" class="input-group-text"> Apellido Persona </label>
-                            <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Ejemplo: Cristhian Galvis" required >
+                            <label for="producto" class="input-group-text"> producto </label>
+                            <input class="form-control" type="text" name="producto" id="producto" placeholder="Ejemplo: repleto carne" obligatorio >
                     </div>
 
                     <div class="input-group mt-2">
-                            <label for="age" class="input-group-text"> Edad </label>
-                            <input class="form-control" type="number" name="age" id="age" placeholder="0" required >
+                            <label for="ingredientes" class="input-group-text"> ingredientes </label>
+                            <input class="form-control" type="text" name="ingredientes" id="ingredientes" placeholder="ejemplo: carne, lechuga" obligatorio >
                     </div>
 
                     <div class="input-group mt-2">
-                            <label for="age" class="input-group-text"> Observacion </label>
-                            <input class="form-control" type="obsevacion" name="observacion" id="observacion" placeholder="Escriba una observacion" required>
+                            <label for="precio" class="input-group-text"> precio </label>
+                            <input class="form-control" type="number" name="precio" id="precio" placeholder="Ejemplo: $20000" obligatorio>
                     
                     </div>
                     
-                    <div class="input-group mt-2">
-                            <input class="form-control" type="file" name="file" id="file">
-                    </div>
+                   
 
                     <div class="form-group mt-4 d-grid gap-2">
                             <button class="btn btn-success"> Crear </button>
